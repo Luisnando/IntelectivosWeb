@@ -1,0 +1,31 @@
+<html>
+<head>
+	<title>Pruebas firebase</title>
+	<link rel="stylesheet" type="text/css" href="index.css">
+	<script src="https://www.gstatic.com/firebasejs/4.1.2/firebase.js"></script>
+	<script>
+	  // Initialize Firebase
+	  var config = {
+	    apiKey: "AIzaSyAYO1RdUgUAHgj-n8DCgkXkIWk1LEN7yzw",
+	    authDomain: "pruebas-a0460.firebaseapp.com",
+	    databaseURL: "https://pruebas-a0460.firebaseio.com",
+	    projectId: "pruebas-a0460",
+	    storageBucket: "pruebas-a0460.appspot.com",
+	    messagingSenderId: "542360863156"
+	  };
+	  firebase.initializeApp(config);
+	</script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	<script type="text/javascript" src="app.js"></script>
+</head>
+<body>
+
+	<input id="autor_ip" placeholder="Autor" onclick="test()">
+	<input id="msg_ip" placeholder="Mensaje">
+	<button onclick="subir()">Subir mensaje</button>
+	<button onclick="leer()">Leer</button>
+
+	<img id="img" src="https://i.redd.it/aovqlce70maz.jpg" onclick="cambiarUrl()">
+
+</body>
+</html>
