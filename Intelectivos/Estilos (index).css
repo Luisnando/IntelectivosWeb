@@ -1,0 +1,150 @@
+body {
+    margin: 0px;
+    background-color: #e3e3e3;
+}
+
+header {
+    background-color: #000;
+    padding: 10px;
+    position: fixed;
+    width: 100%;
+    overflow: hidden;
+    line-height: 15px;
+    box-shadow: 0px 4px 10px gray;
+    z-index: 1;
+}
+
+#Intelectivos-Header {
+    text-decoration: none;
+    color: white;
+    padding: 16px;
+    padding-left: 2px;
+    font-family: sans-serif;
+    font-size: 25px;
+    display: inline-flex;
+}
+
+.Logo {
+    padding-left: 20px;
+}
+
+header nav {
+    float: right;
+    display: flex;
+    padding-right: 20px;
+}
+
+header nav a:hover {
+    border-radius: 50px;
+    background-color: #ee3b24;
+    color: white;
+    -webkit-transition:all 1000ms ease;
+    -o-transition:all 1000ms ease;
+    transition: all 1000ms ease;
+}
+
+#Div-Btn-Header {
+    float: right;
+    display: flex;
+}
+
+#Btn-Header {
+    text-decoration: none;
+    color: white;
+    padding: 17px;
+    font-family: sans-serif;
+    white-space: nowrap;
+}
+
+#Contenido {
+    top: 13%;
+    right: 30%;
+    left: 3%;
+    position: absolute;
+    box-shadow: 0px 0px 10px gray;
+    border-top-style: solid;
+    border-top-color: #ee3b24;
+    border-width: 4px;
+    border-radius: 3px;
+}
+
+#Contenido-Articulos {
+    background-color: white;
+    font-family: sans-serif;
+    font-size: 15px;
+    padding: 30px;
+}
+
+#Contenido-Content {
+    font-family: sans-serif;
+    padding: 15px;
+    display: flex;
+}
+
+#Contenido-Author {
+    font-family: serif;
+    font-size: 12px;
+}
+
+#Contenido-Title {
+    font-family: sans-serif;
+    font-size: 24px;
+}
+
+#Contenido-Date {
+    font font-family: serif;
+    font-size: 16px;
+    display: flex;
+    float: right;
+    position: absolute;
+    right: 30px;
+    top: 55px;
+    color: gray;
+}
+
+#Image-Content {
+    width: 250px;
+    height: 250px;
+    display: flex;
+    left: 35%;
+    position: relative;
+}
+
+/* Barra lateral Derecha */
+
+#Filtros_Busqueda {
+    position: absolute;
+    background-color: white;
+    float: right;
+    white-space: nowrap;
+    right: 0%;
+    top: 13%;
+    left: 71%;
+    box-shadow: 0px 0px 10px gray;
+    border-top-left-radius: 3px;
+    border-bottom-left-radius: 3px;
+    border-top-style: solid;
+    border-top-color: #ee3b24;
+}
+
+.Articulos{
+    text-decoration: none;
+    display: flex;
+    white-space: nowrap;
+    left: 5px;
+    color: black;
+    padding: 10px;
+}
+
+h3 {
+    color: #ee3b24;
+    padding-left: 10px;
+} 
+
+/* Referencias */
+
+#Referencias {
+    background-color: gray;
+    clear: left;
+    position: absolute;
+}
