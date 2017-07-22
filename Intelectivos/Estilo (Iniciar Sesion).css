@@ -58,17 +58,65 @@ header nav a:hover {
 
 /* Iniciar Sesion */
 
+h1 {
+    font-family: sans-serif;
+    font-weight: bold;
+    margin-left: 20%;
+    white-space: nowrap;
+}
+
 #Iniciar-Sesion {
     position: absolute;
-    top: 30%;
-    left: 20%;
+    top: 20%;
+    left: 17%;
     background-color: #ee3b24;
-    border-top-left-radius: 10px;
-    border-top-right-radius: 10px;
+    border-radius: 10px;
     padding: 20px;
+    font-family: sans-serif;
+    font-weight: bold;
+    color: white;
+    box-shadow: 5px 10px 10px gray;
 }
 
 .Texto {
     display: flex;
-    margin-bottom: 20px;
+    margin-bottom: 30px;
+    border-radius: 3px;
+    border: none;
+    font-family: sans-serif;
+    font-size: 30px;
+}
+
+.Imagen {
+    margin-left: 40%;
+}
+
+#Submit-Inicio-Sesion {
+    left: 35%;
+    position: absolute;
+    bottom: 2%;
+    border-radius: 3px;
+    border: none;
+    background-color: white;
+    padding: 10px;
+}
+
+#Submit-Inicio-Sesion:hover {
+    background-color: #e9e9e9;
+    border: inherit;
+}
+
+/*Cerrar Sesión*/
+
+#Crear-Cuenta {
+    position: absolute;
+    top: 20%;
+    right: 17%;
+    background-color: #ee3b24;
+    border-radius: 10px;
+    padding: 20px;
+    font-family: sans-serif;
+    font-weight: bold;
+    color: white;
+    box-shadow: 5px 10px 10px gray;
 }
