@@ -1,20 +1,20 @@
 // Ubicación de los Posts.
 var ref = firebase.database().ref("/Blog/Posts/");
 
-var template = " <div class='Contenido-Articulo'> <div class='Contenido-Title'> TITLE </div> <div class='Contenido-Author'> AUTHOR </div> <div class='Contenido-Date'> DATE </div> <hr style='width:100%; height:2px; background-color: black; border: none;' /> <div class='Contenido-Image'> <img src='IMAGEURL' alt='' class='Image-Content'> </div> <div class='Contenido-Content'> CONTENT </div> <div class='Contenido-Comments'> </div> </div>"
+var plantillaPublicacion = " <div class='Contenido-Articulo'> <div class='Contenido-Title'> TITLE </div> <div class='Contenido-Author'> AUTHOR </div> <div class='Contenido-Date'> DATE </div> <hr style='width:100%; height:2px; background-color: black; border: none;' /> <div class='Contenido-Image'> <img src='IMAGEURL' alt='' class='Image-Content'> </div> <div class='Contenido-Content'> CONTENT </div> <div class='Contenido-Comments'> </div> </div>"
 
 ref.on('child_added',function(data){
 
     var publicacionesContainer = document.getElementById("Contenido");
 
-    var titleVal   = data.child("title").val();
-    var authorVal  = data.child("author").val();
-    var contentVal = data.child("content").val();
-    var dateVal    = data.child("date").val();
+    var titleVal     = data.child("title").val();
+    var authorVal    = data.child("author").val();
+    var contentVal   = data.child("content").val();
+    var dateVal      = data.child("date").val();
     var imageUrlVal  = data.child("imageUrl").val();
-    var key        = data.child("key").val();
+    var key          = data.child("key").val();
 
-    var newPost = template
+    var newPost = plantillaPublicacion
         .replace("TITLE", titleVal)
         .replace("AUTHOR", authorVal)
         .replace("DATE", convertirTiempo(dateVal))
