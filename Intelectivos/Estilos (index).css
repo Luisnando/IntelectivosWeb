@@ -48,7 +48,7 @@ header nav a:hover {
     display: flex;
 }
 
-#Btn-Header {
+.Btn-Header {
     text-decoration: none;
     color: white;
     padding: 17px;
@@ -68,31 +68,31 @@ header nav a:hover {
     border-radius: 3px;
 }
 
-#Contenido-Articulos {
+.Contenido-Articulo {
     background-color: white;
     font-family: sans-serif;
     font-size: 15px;
     padding: 30px;
 }
 
-#Contenido-Content {
+.Contenido-Content {
     font-family: sans-serif;
     padding: 15px;
     display: flex;
 }
 
-#Contenido-Author {
+.Contenido-Author {
     font-family: serif;
     font-size: 12px;
 }
 
-#Contenido-Title {
+.Contenido-Title {
     font-family: sans-serif;
     font-size: 24px;
 }
 
-#Contenido-Date {
-    font font-family: serif;
+.Contenido-Date {
+    font-family: serif;
     font-size: 16px;
     display: flex;
     float: right;
@@ -102,7 +102,7 @@ header nav a:hover {
     color: gray;
 }
 
-#Image-Content {
+.Image-Content {
     width: 250px;
     height: 250px;
     display: flex;
