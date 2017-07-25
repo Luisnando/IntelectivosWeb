@@ -67,8 +67,9 @@ h1 {
 
 #Iniciar-Sesion {
     position: absolute;
-    top: 20%;
-    left: 17%;
+    top: 14%;
+    left: 10%;
+    width: 400px;
     background-color: #ee3b24;
     border-radius: 10px;
     padding: 20px;
@@ -79,16 +80,47 @@ h1 {
 }
 
 .Texto {
+    margin-left: 8%;
+}
+
+.Texto-Iniciar-Sesion {
     display: flex;
     margin-bottom: 30px;
+    margin-left: 8%;
     border-radius: 3px;
     border: none;
     font-family: sans-serif;
     font-size: 30px;
 }
 
-.Imagen {
-    margin-left: 40%;
+.Texto-Crear {
+    display: flex;
+    margin-bottom: 5px;
+    border-radius: 3px;
+    margin-left: 8%;
+    border: none;
+    font-family: sans-serif;
+    font-size: 20px;
+}
+
+.Texto-Crear:hover {
+    border: solid;
+    border-color: black;
+    font-size: 19px;
+}
+
+.Texto-Iniciar-Sesion:hover {
+    border: solid;
+    border-color: black;
+    font-size: 29px;
+}
+
+#Imagen-Grande {
+    margin-left: 35%;
+}
+
+#Imagen-Chica {
+    margin-left: 43%;
 }
 
 #Submit-Inicio-Sesion {
@@ -110,8 +142,11 @@ h1 {
 
 #Crear-Cuenta {
     position: absolute;
-    top: 20%;
-    right: 17%;
+    top: 14%;
+    right: 10%;
+    width: 400px;
+    max-width: 400px;
+    max-height: 500px;
     background-color: #ee3b24;
     border-radius: 10px;
     padding: 20px;
