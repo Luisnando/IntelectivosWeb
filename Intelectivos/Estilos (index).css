@@ -38,6 +38,7 @@ header nav a:hover {
     border-radius: 50px;
     background-color: #ee3b24;
     color: white;
+    cursor: pointer;
     -webkit-transition:all 1000ms ease;
     -o-transition:all 1000ms ease;
     transition: all 1000ms ease;
@@ -60,19 +61,22 @@ header nav a:hover {
     top: 13%;
     right: 30%;
     left: 3%;
+    background-color: transparent;
     position: absolute;
-    box-shadow: 0px 0px 10px gray;
+    padding-bottom: 30px;
+}
+
+.Contenido-Articulo {
+    background-color: white;
+    font-family: sans-serif;
+    font-size: 15px;
     border-top-style: solid;
     border-top-color: #ee3b24;
     border-width: 4px;
     border-radius: 3px;
-}
-
-.Contenido-Articulos {
-    background-color: white;
-    font-family: sans-serif;
-    font-size: 15px;
+    box-shadow: 0px 0px 10px gray;
     padding: 30px;
+    margin-bottom: 30px;
 }
 
 .Contenido-Content {
@@ -89,6 +93,7 @@ header nav a:hover {
 .Contenido-Title {
     font-family: sans-serif;
     font-size: 24px;
+    color: #ee3b24;
 }
 
 .Contenido-Date {
@@ -110,10 +115,66 @@ header nav a:hover {
     position: relative;
 }
 
+/*Comentarios*/
+#Comentarios {
+    background-color: white;
+}
+
+#Comentarios-Autor {
+    font-size: 20px;
+    font-family: sans-serif;
+}
+
+#Comentarios-Date {
+    font font-family: serif;
+    font-size: 16px;
+    display: flex;
+    float: right;
+    position: relative;
+    right: 30px;
+    top: 1px;
+    color: gray;
+}
+
+#Comentarios-Contenido {
+    font-family: sans-serif;
+    padding: 15px;
+    display: flex;
+}
+
+/*Comentar*/
+
+#Comentar {
+    width: 85%;
+    border-radius: 3px;
+    border: solid;
+    border-width: 2px;
+    white-space: pre-wrap;
+    font-size: 16px;
+}
+
+#Comentar:hover {
+    height: 100px;
+}
+
+#Boton-Comentar {
+    background-color: transparent;
+    border: none;
+    left: 40%;
+    top: 0%;
+}
+
+#Boton-Comentar:hover {
+    padding: 5px;
+    border-width: 1px;
+    width: 45px;
+    cursor: pointer;
+}
+
 /* Barra lateral Derecha */
 
 #Filtros_Busqueda {
-    position: absolute;
+    position: fixed;
     background-color: white;
     float: right;
     white-space: nowrap;
@@ -140,11 +201,3 @@ h3 {
     color: #ee3b24;
     padding-left: 10px;
 } 
-
-/* Referencias */
-
-#Referencias {
-    background-color: gray;
-    clear: left;
-    position: absolute;
-}

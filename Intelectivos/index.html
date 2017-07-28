@@ -24,7 +24,7 @@
       };
       firebase.initializeApp(config);
     </script>
-    <script src="Posts.js"></script>
+    <script type="text/javascript" src="Posts.js"></script>
 </head>
 
 <body>
@@ -42,7 +42,54 @@
         </div>
    </header>
    
-   <div id="Contenido">
+   <div id='Contenido'>
+       <!--
+        <div class='Contenido-Articulo'>
+            <div class='Contenido-Title'>
+                TITLE
+            </div>
+            <div class='Contenido-Author'>
+                AUTHOR
+            </div>
+            <div class='Contenido-Date'>
+                DATE
+            </div>
+            <hr style='width:100%; height:2px; background-color: black; border: none;' />
+            <div class='Contenido-Image'>
+                <img src='IMAGEURL' alt='' class='Image-Content'>
+            </div>
+            <div class='Contenido-Content'>
+                CONTENT
+            </div>
+            <div class='Contenido-Comments'>
+            </div>
+        </div>
+        -->
+        <div class="Contenido-Articulo">
+            <hr style='width: 100%; height: 1px; background-color: gray; border: none;' />
+            <div id="Comentarios-Date">
+                25/07/17
+            </div>
+            <div id="Comentarios-Autor">
+                Fernando Delgadillo
+            </div>
+            <div id="Comentarios-Contenido">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cumque illum laudantium eius, doloribus cupiditate doloremque corporis. Rem eligendi reiciendis optio blanditiis, nemo dicta quasi voluptatibus dolor expedita quaerat iusto enim?
+            </div>
+            <hr style='width: 100%; height: 1px; background-color: gray; border: none;' />
+            <div id="Comentarios-Date">
+                25/07/17
+            </div>
+            <div id="Comentarios-Autor">
+                Fernando Delgadillo
+            </div>
+            <div id="Comentarios-Contenido">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cumque illum laudantium eius, doloribus cupiditate doloremque corporis. Rem eligendi reiciendis optio blanditiis, nemo dicta quasi voluptatibus dolor expedita quaerat iusto enim?
+            </div>
+            <hr style='width: 100%; height: 1px; background-color: gray; border: none;' />
+            <textarea id="Comentar" name="Comentario" id="" cols="100" rows="2"></textarea>
+            <button id="Boton-Comentar"><img src="Imagenes/Index/ic_send_black_24dp_1x.png" alt="Imagen De Enviar Comentarios."></button>
+       </div>
    </div>
    
    <div id="Filtros_Busqueda">
