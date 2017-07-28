@@ -1,7 +1,7 @@
 // Ubicación de los Posts.
 var ref = firebase.database().ref("/Blog/Posts/");
 
-var plantillaPublicacion = " <div class='Contenido-Articulo'> <div class='Contenido-Title'> TITLE </div> <div class='Contenido-Author'> AUTHOR </div> <div class='Contenido-Date'> DATE </div> <hr style='width:100%; height:2px; background-color: black; border: none;' /> <div class='Contenido-Image'> <img src='IMAGEURL' alt='' class='Image-Content'> </div> <div class='Contenido-Content'> CONTENT </div> <div class='Contenido-Comments'> </div> </div>"
+var plantillaPublicacion = " <div class='Contenido-Articulos'> <div class='Contenido-Title'> TITLE </div> <div class='Contenido-Author'> AUTHOR </div> <div class='Contenido-Date'> DATE </div> <hr style='width:100%; height:2px; background-color: black; border: none;' /> <div class='Contenido-Image'> <img src='IMAGEURL' alt='' class='Image-Content'> </div> <div class='Contenido-Content'> CONTENT </div> <div class='Contenido-Comments'> </div> </div>"
 
 ref.on('child_added',function(data){
 
