@@ -115,6 +115,18 @@ header nav a:hover {
     position: relative;
 }
 
+#Boton-Favoritos {
+    border-radius: 4px;
+    border: none;
+    width: 30px;
+    height: 30px;
+}
+
+#Imagen-Favoritos {
+    float: left;
+    display: flex;
+}
+
 /*Comentarios*/
 #Comentarios {
     background-color: white;
