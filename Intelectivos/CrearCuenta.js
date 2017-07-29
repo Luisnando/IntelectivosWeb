@@ -10,7 +10,8 @@ function readURL(input) {
 }
 
 function alertPhotoUrl(photo){
-    alert(photo.src)
+    //alert(photo.src);
+    document.getElementById("avatar_input").click();
 }
 
 function testFields(){

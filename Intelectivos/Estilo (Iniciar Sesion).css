@@ -48,7 +48,7 @@ header nav a:hover {
     display: flex;
 }
 
-#Btn-Header {
+.Btn-Header {
     text-decoration: none;
     color: white;
     padding: 17px;
@@ -191,4 +191,21 @@ h1 {
     font-weight: bold;
     color: white;
     box-shadow: 5px 10px 10px gray;
+}
+
+#Crear-Cuenta #avatar_container{
+    margin-left: 8%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#Crear-Cuenta #avatar_container #avatar{
+    border: solid white 5px;
+    width: 50px;
+    cursor: pointer;
+}
+
+#Crear-Cuenta #avatar_container #avatar_input{
+    display: none;
 }
