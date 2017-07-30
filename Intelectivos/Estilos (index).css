@@ -101,9 +101,9 @@ header nav a:hover {
     font-size: 16px;
     display: flex;
     float: right;
-    position: absolute;
-    right: 30px;
-    top: 55px;
+    position: relative;
+    right: 5px;
+    top: 5px;
     color: gray;
 }
 
@@ -118,13 +118,28 @@ header nav a:hover {
 #Boton-Favoritos {
     border-radius: 4px;
     border: none;
-    width: 30px;
+    width: 32px;
     height: 30px;
+    background-color: dimgray;
+    float: right;
 }
 
 #Imagen-Favoritos {
     float: left;
     display: flex;
+    width: 20px;
+}
+
+#Imagen-Favoritos:hover {
+    cursor: pointer;
+}
+
+#Boton-Favoritos:active {
+    background-color: #ee3b24;
+}
+
+#Boton-Favoritos:visited {
+    background-color: #ee3b24;
 }
 
 /*Comentarios*/
@@ -185,7 +200,7 @@ header nav a:hover {
 
 /* Barra lateral Derecha */
 
-#Filtros_Busqueda {
+#Pub-Favoritas {
     position: fixed;
     background-color: white;
     float: right;
