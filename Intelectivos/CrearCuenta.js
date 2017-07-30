@@ -1,34 +1,41 @@
+var profilePhotoFile = null;
+
 function readURL(input) {
     if (input.files && input.files[0]) {
         var reader = new FileReader();
         reader.onload = function (e) {
             $('#avatar')
                 .attr('src', e.target.result);
+
+            profilePhotoFile = input.files[0];
         };
         reader.readAsDataURL(input.files[0]);
     }
 }
 
-function alertPhotoUrl(photo){
-    //alert(photo.src);
+function openFileExplorer(){
     document.getElementById("avatar_input").click();
 }
 
 function testFields(){
     var nombre   = document.getElementById("input-nombre").value;
-    var email    = document.getElementById("input-email").value;
+    var correo    = document.getElementById("input-email").value;
     var pass     = document.getElementById("input-pass").value;
     var passConf = document.getElementById("input-passconf").value;
-    var photoUrl = document.getElementById("avatar").src;
 
-    if (nombre != "" && email != "" && pass != ""){
-        if (email.includes("@")){
-            if (pass == passConf){
-
-                createAccount(nombre, email, pass, photoUrl);
-
-            } else {
+    if (nombre != "" && correo != "" && pass != ""){
+        if (correo.includes("@")){
+            if (pass != passConf) {
                 alert("Las contraseñas no coinciden.")
+            } else {
+
+                if (profilePhotoFile != null) {
+
+                    createAccount(nombre, correo, pass, profilePhotoFile);
+
+                } else {
+                    alert("Hubo un problema con el avatar. Intente cargándolo de nuevo o pruebe con otra imagen.");
+                }
             }
         } else {
             alert("El email introducido no es válido")
@@ -38,25 +45,28 @@ function testFields(){
     }
 }
 
-function createAccount(name, email, pass, imgUrl) {
-    firebase.auth().createUserWithEmailAndPassword(email, pass).then(function () {
+function createAccount(name, email, password, imgFile) {
+    firebase.auth().createUserWithEmailAndPassword(email, password).then(function () {
         var user = firebase.auth().currentUser;
+        var uid = user.uid
 
-        user.updateProfile({
-            displayName: name,
-            photoUrl: imgUrl
-        }).then(function(){
+        var avatarRef = firebase.storage().ref("Usuarios/" + uid + "/avatar.jpg");
+        avatarRef.put(imgFile).then(function (snapshot) {
+            snapshot.ref.getDownloadURL().then(function (url) {
 
-            alert(user.photoUrl);
+                user.updateProfile({
+                    displayName: name,
+                    photoURL: url
+                }).then(function () {
 
-            firebase.database().ref("/Usuarios/" + user.uid).set({
-                "email": email,
-                "name": name,
-                "photoUri": user.photoUrl,
-                "uid": user.uid
+                    firebase.database().ref("Usuarios/" + uid).set({
+                        "email": email,
+                        "name": name,
+                        "photoUri": url,
+                        "uid": uid
+                    });
+                });
             });
-
-            alert("¡Cuenta creada!");
         });
     });
 }
