@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <title>Intelectivos</title>
+    <meta charset="UTF-8">
+    <meta name="description" content="Publicidad para tu negocio.">
+    <meta name="keywords" content="HTML,CSS,JS">
+    <meta name="author" content="Intelectivos">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="Estilos%20(Contacto).css">
+    <link rel="icon" type="image/jpg" href="Imagenes/Header/Nuevo-logo-intelectivos-02.jpg">
+    
+    <!-- iniciar firebase -->
+    <script src="https://www.gstatic.com/firebasejs/4.1.3/firebase.js"></script>
+    <script>
+      // Initialize Firebase
+      var config = {
+        apiKey: "AIzaSyA7CGzh8Y_1taW85_cGMj8ctOgdcw02j9U",
+        authDomain: "intelectivos-95f27.firebaseapp.com",
+        databaseURL: "https://intelectivos-95f27.firebaseio.com",
+        projectId: "intelectivos-95f27",
+        storageBucket: "intelectivos-95f27.appspot.com",
+        messagingSenderId: "115387321095"
+      };
+      firebase.initializeApp(config);
+    </script>
+</head>
+
+<body>
+   <header>
+        <div>
+            <a href="index.html"><img src="Imagenes/Header/Logo_Intelectivos_header.png" alt="Logo de Intelectivos" height="25px" width="25px" class="Logo"></a>
+            <a href="index.html" id="Intelectivos-Header">INTELECTIVOS</a>
+            <div id="Div-Btn-Header">
+                <nav>
+                    <a href="index.html" id="Btn-Header">Inicio</a>
+                    <a href="Contacto.html" id="Btn-Header">Contacto</a>
+                    <a href="Iniciar%20Sesion.html" id="Btn-Header">Iniciar Sesión</a>
+                </nav>
+            </div>
+        </div>
+   </header>
+   
+   <div style="height: 7%; position: relative; padding: 2.6%;px;"></div>
+   <div id="Contenedor">
+      <div id="Informacion">
+          <div id="Informacion-Izquierda">
+              <h1 class="Informacion-Texto">INTELECTIVOS</h1>
+              <p class="Informacion-Texto">En 2016 decidimos crear una agencia de publicidad y marketing online a la altura de las mejores del mercado local. Nuestro negocio consiste en proporcionarte los mejores resultados, nuestra función es conseguir atraer a tus clientes y ayudarte a que tu empresa sea todo un éxito.</p>
+          </div>
+          <div id="Informacion-Derecha">
+            <div style="position: relative; padding: 2%"></div>
+             <text class="Texto-Inf-Derecha">Creatividad</text>
+              <div id="Creatividad">
+                 <text class="Porcentaje-Inf-Derecha">90%</text>
+              </div>
+             <text class="Texto-Inf-Derecha">Trabajo en equipo</text>
+              <div id="Trabajo">
+                 <text class="Porcentaje-Inf-Derecha">95%</text>
+              </div>
+             <text class="Texto-Inf-Derecha">Compromiso con nuestros clientes</text>
+              <div id="Compromiso">
+                 <text class="Porcentaje-Inf-Derecha">100%</text>
+              </div>
+          </div>
+      </div>
+      <div id="Nuestros-Sevicios">
+          <h1>Nuestros Servicios</h1>
+      </div>
+   </div>
+   
+</body>
+</html>

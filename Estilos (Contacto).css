@@ -1,0 +1,154 @@
+body {
+    margin: 0px;
+    background-color: #e3e3e3;
+}
+
+header {
+    background-color: #000;
+    padding: 10px;
+    position: fixed;
+    width: 100%;
+    overflow: hidden;
+    line-height: 15px;
+    box-shadow: 0px 4px 10px gray;
+    z-index: 1;
+}
+
+#Intelectivos-Header {
+    text-decoration: none;
+    color: white;
+    padding: 16px;
+    padding-left: 2px;
+    font-family: sans-serif;
+    font-size: 25px;
+    display: inline-flex;
+}
+
+.Logo {
+    padding-left: 20px;
+}
+
+header nav {
+    float: right;
+    display: flex;
+    padding-right: 20px;
+}
+
+header nav a:hover {
+    border-radius: 50px;
+    background-color: #ee3b24;
+    color: white;
+    -webkit-transition:all 1000ms ease;
+    -o-transition:all 1000ms ease;
+    transition: all 1000ms ease;
+}
+
+#Div-Btn-Header {
+    float: right;
+    display: flex;
+}
+
+#Btn-Header {
+    text-decoration: none;
+    color: white;
+    padding: 17px;
+    font-family: sans-serif;
+    white-space: nowrap;
+}
+
+/* Pagina Contacto */
+
+/* Informacion */
+
+.Informacion-Texto {
+    padding-left: 20px;
+    padding-right: 20px;
+    margin-top: 5%;
+    -webkit-animation-name: Texto;
+    -webkit-animation-duration: 2s;
+}
+
+@-webkit-keyframes Texto {
+    0% {opacity: 0.3; margin-top: 10%}
+    100% {opacity: 1; margin-top: 5%}
+}
+
+#Informacion {
+    background-color: white;
+    font-family: sans-serif;
+    font-size: 18px;
+    position: relative;
+    display: flex;
+}
+
+#Informacion-Izquierda {
+    text-align: left;
+    background-color: white;
+    width: 50%;
+    height: 280px;
+}
+
+#Informacion-Derecha {
+    text-align: left;
+    background-color: white;
+    float: right;
+    width: 50%;
+    height: 280px;
+}
+
+.Texto-Inf-Derecha {
+    padding: 10px;
+}
+
+#Creatividad {
+    margin-top: 10px;
+    margin-bottom: 30px;
+    background-color: black;
+    text-align: right;
+    width: 70%;
+    -webkit-animation-name: Creatividad;
+    -webkit-animation-duration: 2s;
+}
+
+@-webkit-keyframes Creatividad {
+    0% {width: 1%;}
+    100% {width: 70%}
+}
+
+#Trabajo {
+    margin-top: 10px;
+    margin-bottom: 30px;
+    background-color: black;
+    text-align: right;
+    width: 75%;
+    -webkit-animation-name: Trabajo;
+    -webkit-animation-duration: 2s;
+}
+
+@-webkit-keyframes Trabajo {
+    0% {width: 1%;}
+    100% {width: 75%}
+}
+
+#Compromiso {
+    margin-top: 10px;
+    margin-bottom: 30px;
+    background-color: black;
+    text-align: right;
+    width: 80%;
+    -webkit-animation-name: Compromiso;
+    -webkit-animation-duration: 2s;
+}
+
+@-webkit-keyframes Compromiso {
+    0% {width: 1%;}
+    100% {width: 80%}
+}
+
+.Porcentaje-Inf-Derecha {
+    color: white;
+}
+
+#Nuestros-Servicios {
+    font-family: sans-serif;
+}
